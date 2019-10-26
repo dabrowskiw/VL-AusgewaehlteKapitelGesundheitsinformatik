@@ -2,7 +2,7 @@
 \setbeamertemplate{background}[bgfirst]
 \setbeamertemplate{footline}[first]
 \subtitle{\theslidesection: Technische Grundlagen}
-\titlegraphic{Bilder/logo2.png}
+\titlegraphic{Kapitel/TechnischeGrundlagen/Bilder/logo2.png}
 \begin{frame}[noframenumbering]
     \titlepage
     \begin{textblock}{10}(4.75,15)
@@ -40,29 +40,26 @@
 \end{frame}
 
 \begin{frame}{Sourcecodeverwaltung (git)}
-    \begin{minipage}{.4\textwidth}
-        \begin{figure}[h!]
-            \frame{\includegraphics[height=5.5cm]{Bilder/gitbranching2.png}}
-            \caption{Teamarbeit mit mehreren remotes \cite{gitbranching}}
-        \end{figure}
-    \end{minipage}
+	\begin{textblock}{7.6}(0.2,3.1)
+		\begin{mdframed}[backgroundcolor=white]
+			\begin{center}
+				\includegraphics[max width=7cm, max height=5.6cm]{Kapitel/TechnischeGrundlagen/Bilder/gitbranching2.png}
+				\vspace{0.1cm}
+				\captionof{figure}{Teamarbeit mit mehreren remotes \cite{gitbranching}}
+			\end{center}
+		\end{mdframed}
+	\end{textblock}
     \only<2->{
-        \begin{textblock}{6}(10,0.2)
-            \begin{figure}[h!]
-                \includegraphics[height=7.3cm, left]{Bilder/gitbranching.png}
-                \caption{Komplexe branching-Strategie \cite{gitbranching}}
-            \end{figure}
-        \end{textblock}
+		\begin{textblock}{7.6}(8,3.1)
+			\begin{mdframed}[backgroundcolor=white]
+				\begin{center}
+					\includegraphics[max width=7cm, max height=5.6cm]{Kapitel/TechnischeGrundlagen/Bilder/gitbranching.png}
+					\vspace{0.2cm}
+					\captionof{figure}{Komplexe branching-Strategie \cite{gitbranching}}
+				\end{center}
+			\end{mdframed}
+		\end{textblock}
     }
-\end{frame}
-
-\begin{frame}{KW42}
-    \begin{itemize}
-        \item Auffrischung
-        \item<2-> Nachtrag zu Open Source aus KW42
-	\item<3-> Besuch bei VMScope nächste Woche
-        \item<4-> Update zu Projekten (3.-15. Semester!)
-    \end{itemize}
 \end{frame}
 
 \begin{frame}{Übung: git}
@@ -167,14 +164,16 @@
 \begin{frame}{Exkurs: Warum Python: ROI II}
   \begin{textblock}{10}(1,2.8)
    \begin{figure}[h!]
-     \frame{\includegraphics[width=12cm]{Bilder/PythonPulls.jpg}}
+     \frame{\includegraphics[width=12cm]{Kapitel/TechnischeGrundlagen/Bilder/PythonPulls.jpg}}
+     \vspace{0cm}
      \caption{Pull-requests auf github nach Sprache \cite{PythonPulls}}
    \end{figure}
   \end{textblock}
  \only<2->{
   \begin{textblock}{10}(0.9,3)
    \begin{figure}[h!]
-     \frame{\includegraphics[width=6.5cm]{Bilder/PythonQuestions.png}}
+     \frame{\includegraphics[width=6.5cm]{Kapitel/TechnischeGrundlagen/Bilder/PythonQuestions.png}}
+     \vspace{0.3cm}
      \caption{Fragen auf StackOverflow nach Sprache \cite{PythonQuestions}}
    \end{figure}
   \end{textblock}
@@ -182,7 +181,8 @@
  \only<3->{
   \begin{textblock}{10}(7.1,0.6)
    \begin{figure}[h!]
-     \includegraphics[width=7cm]{Bilder/LanguagesSalary.png}
+     \includegraphics[width=7cm]{Kapitel/TechnischeGrundlagen/Bilder/LanguagesSalary.png}
+     \vspace{0.3cm}
      \caption{Einkommen und Stellen nach Programmiersprache \cite{LanguagesSalary}}
    \end{figure}
   \end{textblock}
@@ -209,7 +209,8 @@
     \only<2>{
         \begin{textblock}{10}(3,0.2)
             \begin{figure}[h!]
-                \includegraphics[height=7.3cm, left]{Bilder/langperformance.png}
+                \includegraphics[height=7.3cm, left]{Kapitel/TechnischeGrundlagen/Bilder/langperformance.png}
+				\vspace{0cm}
                 \caption{Beispielhafter Performance-Vergleich zwischen Sprachen \cite{langperformance}}
             \end{figure}
         \end{textblock}
