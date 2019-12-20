@@ -2,36 +2,10 @@
 \begin{document}
 \tableofcontents
 
-\section{Erbinformation}
-  Jeder lebende Organismus (Tiere, Bakterien, Pilze, Amöben, Pflanzen) sowie Viren\footnote{Da Viren sich nicht eigenständig vermehren können sondern für viele kritische Vorgänge auf die während der Infektion gekaperte Zellmaschinerie des Wirts angewiesen sind, besteht kein Konsens darüber, ob Viren leben oder nicht} besitzt Erbinformation. Diese beschreibt, welche biochemischen Prozesse der Organismus in der Lage ist, durchzuführen. Daraus ergibt sich das Aussehen und Verhalten des jeweiligen Organismus. Alles was in einem Organismus geschieht - von der Verstoffwechslung von Zucker zur Energiegewinnung über den Aufbau von Zellmembranen und extrazellulären Matrices (wie z.B. Knochen) bis hin zu der unterschiedlichen Ausdifferenzierung von Zellen in unterschiedlichen Bereichen des Körpers aufgrund der Einwirkung von Botenstoffen - ist auf solche biochemische Prozesse zurückzuführen. 
+\input{Erbinformation}
 
-\subsection{DNA}
-  Der Träger der Erbinformation sind Ketten von Nukleinbasen. Die Verkettung erfolgt über ein Rückgrad von Zuckern und Phosphosäureestern, wodurch die gesamte Kette eine Säure ist (Nukleinsäure, Englisch nucleic acid). In manchen Viren handelt es sich bei den Zuckermolekülen um Ribose, die gesamte Kette wird dann als Ribnoukleinsäure (RNS, auch im Deutschen Sprachraum ist aber die englische Abkürzung \textbf{RNA} für ribonucleic acid gängiger) bezeichnet. In anderen Viren sowie allen sonstigen Organismen kommen modifizierte Zuckermoleküle (Desoxyribose\footnote{Es fehlt im Vergleich zur Ribose ein Sauerstoffmolekül, daher der Name: Des für ohne und Oxy für Sauerstoff}) zum Einsatz, die Kette heißt dann entsprechend Desoxyribonukleinsäure (DNS, bzw. Englisch \textbf{DNA}). 
+\input{NGS}
 
-  Die Reihenfolge der \textbf{Nukleinbasen} definiert - wie die Abfolge von Zeichen in einer Textdatei - den Inhalt der Erbinformation. Dabei ist das Alphabet der DNA deutlich kleiner als der ASCII-Zeichensatz. Es gibt nur fünf unterschiedliche Nukleinbasen, die der Einfachheit halber bei der textuellen Repräsentation einer DNA-Sequenz mit den Anfangsbuchstaben ihrer formalen Namen dargestellt werden: \textbf{Adenin (A), Cytosin (C), Guanin (G), Thymin (T) und Uracil (U)}. Dabei kommen in der DNA ausschließlich Adenin, Cytosin, Guanin und Thymin vor, in der RNA wird statt Thymin Uracil eingesetzt. Entsprechend werden A, C, G und T als \textbf{DNA-Basen} und A, C, G und U als \textbf{RNA-Basen} bezeichnet. 
+\input{DeNovoAssembly}
 
-  Nukleinbasen haben die Eigenschaft, dass die passende Paare bilden, die aneinander binden können - Adenin und Thymin (bzw. im Fall von RNA Uracil) sowie Cytosin und Guanin passen jeweils zueinander. Entsprechend werden diese zwei Paare jeweils als \textbf{komplementäre Basen} bezeichnet. Diese Eigenschaft wird bei der Zellteilung verwendet, um die in einer Zelle vorliegende DNA zu kopieren. Die \textbf{Primase}, ein spezialisiertes Protein, kann ein kleines Stück DNA-Einzelstrang kopieren\footnote{Die Kopie ist zunächst RNA und wird nachher von einer anderen Polymerase abgebaut und durch DNA ersetzt, dies ist aber im Kontext dieser Vorlesung ein Randdetail.}, indem sie an ein paar aufeinanderfolgende Nukleinbasen die jeweils komplementären Basen legt und diese mit einem Rückgrad verbindet. Diese kurze Kopie heißt \textbf{Primer}\footnote{Vom Lateinischen primarum - fundamental, essentiell, an erster Stelle stehend.}, denn sie wird von der \textbf{Polymerase} - einem weiteren spezialisierten Protein - erkannt und als Startpunkt für die DNA-Replikation verwendet. Die Polymerase setzt an der Stelle, an der ein Doppelstrang zu einem Einzelstrang wird, an (also am Ende eines Primers), und kopiert den Einzelstrang Base für Base indem sie jeweils die komplementären Basen anbaut und somit den Doppelstrang erweitert. Die Richtung, in der dieser Kopiervorgang geschieht, ist durch die chemische Struktur des Rückgrads definiert. Jedes Element des Rückgrads enthält ein Zuckermolekül, dessen Kohlenstoffatome der Reihe nach durchnummeriert werden. Die vorhergehende Nukleinbase ist über das dritte Kohlenstoffatom angebunden, die nächste über das fünfte. Demenstprechend spricht man vom \textbf{3'-Ende} und vom \textbf{5'-Ende} eines DNA-Moleküls. Die Polymerase kann DNA nur in \textbf{3'$\rightarrow$5'-Richtung ablesen} und in \textbf{5'$\rightarrow$3'-Richtung synthetisieren}. Entsprechend entsteht bei der Replikation ein DNA-Doppelstrang, bei dem die Einzelstränge jeweils zueinander gegenläufig aus komplementären Basen aufgebaut sind und als zueinander \textbf{revers-komplementär} bezeichnet werden.
-
-  In den meisten Organismen, in denen DNA der Träger der Erbinformation ist, liegt die DNA nicht einfach als einzelner Strang vor\footnote{Es gibt einige Viren, die einzelsträngige DNA verwenden}. Stattdessen sind zwei gegenläufige Einzelstränge - der eine direkt an dem anderen synthetisiert, wie oben beschrieben - miteinander zu einem DNA-Doppelstrang verbunden. Durch Spannungen im Rückgrad\footnote{Die Basen sind durch den geometrischen Aufbau der Rückgrad-Moleküle nicht exakt parallel zueinander sondern jeweils um jeweils ca. 30 Grad gegeneinander verdreht} sind dabei die Einzelstränge umeinander verdrillt, der Doppelstrang liegt in Form der berühmten DNA-Doppelhelix\footnote{Entsprechend muss vor der oben beschriebenen Replikation dieser Strang entwunden werden, dies geschieht durch ein weiteres Protein names Helikase.} vor. 
-
-\subsubsection{Empfohlene Youtube-Videos}
-\begin{description}[align=left]
-	\item [DNA-Struktur] \href{https://www.youtube.com/watch?v=o\_-6JXLYS-k}{https://www.youtube.com/watch?v=o\_-6JXLYS-k}
-	\item [DNA-Replikation] \href{https://www.youtube.com/watch?v=0Ha9nppnwOc}{https://www.youtube.com/watch?v=0Ha9nppnwOc} (Lagging strand und Okazaki-Fragmente nur zur Information, nicht prüfungsrelevant)
-\end{description}
-  
-\subsubsection{Kontrollfragen}
-\begin{enumerate}
-	\item Welches Enzym kann ausgehend von einem gebundenen Primer einen DNA-Strang kopieren?
-	\item Was sind komplementäre Basen?
-	\item Kann die in einem Bakterium DNA in ihrer natürlichen Form direkt von einer Polymerase kopiert werden?
-	\item Welche Bedingungen müssen erfüllt sein, damit die Polymerase ein Stück DNA kopieren kann?
-	\item Wie viele Nucleinbasen gibt es? Wie heißen sie?
-	\item Ist der Gehalt an Erbinformation zwischen einem DNA-Einzeltrang und einem DNA-Doppelstrang unterschiedlich?
-\end{enumerate}
-
-\subsection{Transkription}
-Die DNA an sich ist reiner Träger der Erbinformation.
-\section{Genomsequenzierung}
-\section{De novo-Assemblierung}
 \end{document}
