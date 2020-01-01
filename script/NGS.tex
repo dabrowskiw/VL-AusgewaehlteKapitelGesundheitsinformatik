@@ -31,6 +31,21 @@ Mittels Illumina-Sequenzierung ist es derzeit möglich, in einem wenige Tage dau
 
 \subsection{Third Generation Sequencing: Nanopore (MinION), SMRT (PacBio)}
 
+Die Entwicklung der Second Generation Sequencing-Methoden erlaubte einen rasanten Anstieg der Anzahl der bekannten Genome. GenBank, die größte und wichtigste Datenbank von Nukleotidsequenzen, startete 1982 mit 606 Einträgen ($6.8 * 10^5$ Basen). 1990 waren es noch 41 Tausend mittels Sanger-Sequenzierung generierte Einträge ($5.1*10^7$ Basen), 2000 - 18 Jahre nach ihrem Start - dank der Verwendung der ersten Second Generation Sequencing-Geräte schon 5.7 Millionen Einträge ($5.8 * 10^9$ Basen). 2019, weitere 19 Jahre später, sind es 367 Millionen Einträge ($3.2 * 10^{11}$ Basen), die fast alle mittels Second Generation Sequencing erstellt wurden. 
+
+Trotzdem bringt das Second Generation Sequencing einige Nachteile mit sich. Die notwendige Amplifikation der Fragmente während der Library Generation ist zeitaufwändig und kann zu Fehlern führen: Genauso wie die Polymerase beim Kopieren der DNA während der Zellteilung Fehler machen kann, die zu Mutationen führen, kann sie auch bei der PCR Fehler machen, die dann zu falschen Sequenzierungsergebnissen führen\footnote{Der PCR-Schritt birgt noch viele weitere Fehlerquellen, die die spätere Auswerung massiv erschweren, deren Behandlung aber den Rahmen dieser Veranstaltung sprengen würde.}. Außerdem sind die kurzen Readlängen von weniger als 1000 Basen/Read bei der Rekonstruktion der Genome problematisch, wie in dem nächsten Kapitel deutlich wird.
+
+Dies motivierte die Entwicklung einer neuen Generation von Sequenziermethoden, \textbf{Third Generation Sequencing} genannt (gemeinsam mit dem Second Generation Sequencing werden diese Methoden auch als \textbf{Next Generation Sequencing} bezeichnet). Diese haben gemeinsam, dass sie kein Zerschneiden und keine Amplifikation der DNA vor der Sequenzierung erfordern. Stattdessen werden komplette einzelne DNA-Moleküle gelesen. Allerdings liegt die Fehlerrate bei diesen Methoden auch deutlich höher, als bei den Second Generation Sequencing-Methoden: Während dort schon von einer schlechten Qualität geredet wird, wenn $1\%$ der Basen falsch ist und hochqualitative Sequenzierergebnisse nur Fehlerraten von unter $0.01\%$ haben, können bei Third Generation Sequencing aktuell ca. $10\%$ der Basen nicht richtig gelesen werden.
+
+Die zwei derzeit auf dem Markt verfügbaren Third Generation Sequencing-Technologien sind das \textbf{Nanopore Sequencing} und das \textbf{Single Molecule Real-Time Sequencing} (\textbf{SMRT}).
+
+\subsubsection{Nanopore Sequencing}
+
+Beim Nanopore Sequencing wird eine Kammer verwendet, die von einer von Poren durchsetzten Membran in zwei Teile getrennt ist. Auf der einen Seite der Membran befindet sich eine Lösung mit einer hohen Konzentration an gleich geladenen Ionen, auf der anderen Seite die gleiche Lösung ohne Ionen. Dieses Ungleichgewicht strebt von Natur aus danach, ausgeglichen zu werden, indem Ionen dem Ladungsgefälle folgend durch die Poren strömen. Der dadurch entstehende Stromfluss kann direkt an den Poren gemessen werden. Wird nun DNA in die Lösung auf einer Seite der Membran gegeben, kann sie von Proteinen, die auf den Poren immobilisiert sind, gebunden und durch die Pore geschoben werden. Da die einzelnen Nukleotide aufgrund ihrer unterschiedlichen chemischen Struktur auch unterschiedlich groß sind, wird die Pore dabei abhängig davon, welche Nukleotide gerade durch sie geschoben werden, unterschiedlich stark verstopft. Je nach Verstopfungsgrad können entsprechend auch unterschiedlich viele Ionen daneben durch die Pore fließen, die Intensität des durch die Pore fließenden Stroms wird also verändert. Aus dieser Veränderung der Stromintensität über die Zeit hinweg wird rekonstruiert, in welcher Reihenfolge Nukleotide durch die Pore geschoben wurden und damit auch die Sequenz des DNA-Moleküls.
+
+\subsubsection{Single Molecule Real-Time Sequencing}
+
+
 \subsection{Empfohlene Youtube-Videos}
 \begin{description}[align=left]
 	\item [PCR] \href{https://www.youtube.com/watch?v=iQsu3Kz9NYo}{https://www.youtube.com/watch?v=iQsu3Kz9NYo}
